@@ -1,10 +1,13 @@
-import angular from 'angular';
-import Home from './home/home';
-import About from './about/about';
+import angular from "angular";
+import About from "./about/about";
+import Navbar from "./generalNavbar/generalNavbar";
+import Home from "./home/home";
+import "./general.styl";
 
-let componentModule = angular.module('app.general', [
+let componentModule = angular.module( "app.general", [
   Home.name,
-  About.name
+  About.name,
+  Navbar.name
 ] )
 .config( ( $stateProvider, $urlRouterProvider ) => {
   "ngInject";
@@ -15,10 +18,10 @@ let componentModule = angular.module('app.general', [
     .state( "general", {
       views:{
         "navbar": {
-          template: "navbar"
+          template: "<general-navbar></general-navbar>"
        },
         "footer": {
-          template: "footer"
+          templateUrl: "app/modules/general/footer.html"
         }
       }
     } );

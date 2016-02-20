@@ -1,0 +1,22 @@
+<br>
+<md-toolbar class="bg-transparent">
+  <div class="md-toolbar-tools">
+    <img class="brand-logo" src="http://cdn-0-staging.ecrossit.com/images/ecrossit-default-small-2.png"></img>
+    <span flex></span>
+    <md-button class="md-accent" ui-sref="about" ng-hide="vm.$mdMedia('xs')">About</md-button>
+    <md-button class="md-accent" ui-sref="faq" ng-hide="vm.$mdMedia('xs')">FAQ</md-button>
+    <md-button class="md-accent" class="md-icon-button" aria-label="menu" ng-click="vm.toggleSideNav()" ng-show="vm.$mdMedia('xs')">
+      <md-icon class="material-icons">menu</md-icon>
+    </md-button>
+  </div>
+</md-toolbar>
+
+<md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="left">
+  <md-toolbar class="bg-transparent">
+    <img class="brand-logo" src="http://cdn-0-staging.ecrossit.com/images/ecrossit-default-small-2.png"></img>
+    <br>
+    <md-button class="md-accent" ui-sref="about">About</md-button>
+    <br>
+    <md-button class="md-accent" ui-sref="faq">FAQ</md-button>
+  </md-toolbar>
+</md-sidenav>

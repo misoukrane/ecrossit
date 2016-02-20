@@ -99,7 +99,7 @@ gulp.task('component', () => {
   };
   const name = yargs.argv.name;
   const parentPath = yargs.argv.parent || '';
-  const destPath = path.join(resolveToComponents(), parentPath, name);
+  const destPath = path.join(resolveToApp(), parentPath, name);
 
   return gulp.src(paths.blankTemplates)
     .pipe(template({
