@@ -1,6 +1,7 @@
 class HomeController {
-  constructor() {
-    this.name = 'home';
+  constructor( $mdMedia ) {
+    "ngInject";
+    this.$mdMedia = $mdMedia;
   }
 }
 
