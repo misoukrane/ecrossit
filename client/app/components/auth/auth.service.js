@@ -1,4 +1,6 @@
-let AuthService = function () {
+let AuthService = function( Stamplay ) {
+  "ngInject";
+  const stamplay = Stamplay;
   const user = {};
 
   let getUser = () => {
@@ -9,7 +11,11 @@ let AuthService = function () {
     return user.isSignedIn;
   };
 
-  return { getUser, isSignedIn };
+  let signInWith = ( provider ) => {
+    stamplay.User.socialLogin( provider );
+  };
+
+  return { getUser, signInWith, isSignedIn };
 };
 
 export default AuthService;

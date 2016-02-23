@@ -1,14 +1,21 @@
-<div layout="row" layout-padding layout-xs="column">
-  <div flex="65" class="text-center" flex-xs="100">
-    <h1 class="md-display-1">
+<div layout="column">
+  <div layout="row" layout-wrap layout-margin layout-fill layout-xs="column" flex>
+    <div flex="65" class="text-center" flex-xs="100">
+      <h1 class="md-display-1">
       Your E-Resume and Portfolio building
       just got easier!
     </h1>
-    <iframe style="width: 100%" height="315" src="https://www.youtube.com/embed/Z48LqDnMEgg" frameborder="0" allowfullscreen></iframe>
-    <br ng-hide="vm.$mdMedia('xs')">
-    <br ng-hide="vm.$mdMedia('xs')">
+      <iframe style="width: 100%" height="315" src="https://www.youtube.com/embed/Z48LqDnMEgg" frameborder="0" allowfullscreen></iframe>
+      <br ng-hide="vm.$mdMedia('xs')">
+      <br ng-hide="vm.$mdMedia('xs')">
+    </div>
+    <div flex class="bg-opaque rounded-corner-4">
+      <sign-in></sign-in>
+    </div>
   </div>
-  <div flex>
-    <sign-in></sign-in>
+  <div flex layout-margin>
+    <p class="md-body-1">
+      Lorem Ipsum és un text de farciment usat per la indústria de la tipografia i la impremta. Lorem Ipsum ha estat el text estàndard de la indústria des de l'any 1500, quan un impressor desconegut va fer servir una galerada de text i la va mesclar per crear un llibre de mostres tipogràfiques. No només ha sobreviscut cinc segles, sinó que ha fet el salt cap a la creació de tipus de lletra electrònics, romanent essencialment sense canvis. Es va popularitzar l'any 1960 amb el llançament de fulls Letraset que contenien passatges de Lorem Ipsum, i més recentment amb programari d'autoedició com Aldus Pagemaker que inclou versions de Lorem Ipsum.
+    </p>
   </div>
 </div>

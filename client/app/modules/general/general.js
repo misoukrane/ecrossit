@@ -1,13 +1,15 @@
 import angular from "angular";
 import About from "./about/about";
-import Navbar from "./generalNavbar/generalNavbar";
 import Home from "./home/home";
+import Navbar from "./generalNavbar/generalNavbar";
+import SignIn from "./signIn/signIn";
 import "./general.styl";
 
 let componentModule = angular.module( "app.general", [
   Home.name,
   About.name,
-  Navbar.name
+  Navbar.name,
+  SignIn.name
 ] )
 .config( ( $stateProvider, $urlRouterProvider ) => {
   "ngInject";
