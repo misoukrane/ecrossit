@@ -1,5 +1,5 @@
 <div class="text-center" layout="column" layout-padding>
-  <div flex><h1 class="md-display-1">Sign In</h1></div>
+  <div flex><h1 class="md-display-1">Sign In / Register</h1></div>
   <!-- Sign in buttons-->
   <div flex>
     <md-button ng-click="signInCtrl.signInWith('facebook')" class="md-raised sign-in-button facebook-color md-primary">
@@ -7,17 +7,17 @@
     </md-button>
   </div>
   <div flex>
-    <md-button class="md-raised sign-in-button twitter-color md-primary">
+    <md-button ng-click="signInCtrl.signInWith('twitter')" class="md-raised sign-in-button twitter-color md-primary">
       Twitter
     </md-button>
   </div>
   <div flex>
-    <md-button class="md-raised sign-in-button google-color md-primary">
+    <md-button ng-click="signInCtrl.signInWith('google')" class="md-raised sign-in-button google-color md-primary">
       Google
     </md-button>
   </div>
   <div flex>
-    <md-button class="md-raised sign-in-button github-color md-primary">
+    <md-button ng-click="signInCtrl.signInWith('github')" class="md-raised sign-in-button github-color md-primary">
       Github
     </md-button>
   </div>
