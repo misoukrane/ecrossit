@@ -5,10 +5,10 @@
       <img class="brand-logo" src="http://cdn-0-staging.ecrossit.com/images/ecrossit-default-small-2.png">
     </a>
     <span flex></span>
-    <md-button class="md-accent" ui-sref="signin" ng-hide="vm.$mdMedia('xs')">Sign In</md-button>
+    <md-button class="md-accent" ui-sref="signin" ng-hide="vm.signedIn || vm.$mdMedia('xs')">Sign In</md-button>
     <md-button class="md-accent" ui-sref="about" ng-hide="vm.$mdMedia('xs')">About</md-button>
     <md-button class="md-accent" ui-sref="faq" ng-hide="vm.$mdMedia('xs')">FAQ</md-button>
-    <md-button class="md-accent" class="md-icon-button" aria-label="menu" ng-click="vm.toggleSideNav()" ng-show="vm.$mdMedia('xs')">
+    <md-button class="md-accent" class="md-icon-button" aria-label="menu" ng-click="vm.toggleSideNav()" ng-show="vm.$mdMedia('xs')" >
       <md-icon class="material-icons">menu</md-icon>
     </md-button>
   </div>
@@ -18,7 +18,7 @@
   <md-toolbar class="bg-transparent">
     <img class="brand-logo" src="http://cdn-0-staging.ecrossit.com/images/ecrossit-default-small-2.png"></img>
     <br>
-    <md-button class="md-accent" ui-sref="signin">Sign In</md-button>
+    <md-button ng-hide="vm.signedIn" class="md-accent" ui-sref="signin">Sign In</md-button>
     <br>
     <md-button class="md-accent" ui-sref="about">About</md-button>
     <br>

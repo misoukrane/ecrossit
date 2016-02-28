@@ -1,8 +1,8 @@
 import angular from "angular";
 import AuthService from "./auth.service";
 
-let authModule = angular.module( "auth", [] )
+let authModule = angular.module( "app.components.auth", [] )
 
-.factory( "Auth", AuthService );
+.service( "auth", AuthService );
 
 export default authModule;

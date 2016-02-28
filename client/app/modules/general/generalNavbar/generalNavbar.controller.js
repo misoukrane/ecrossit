@@ -1,8 +1,15 @@
 class GeneralNavbarController {
-  constructor( $mdSidenav, $mdMedia ) {
+  constructor( $scope, $mdSidenav, $mdMedia, auth ) {
     "ngInject";
+    this.auth = auth;
     this.$sideNav = $mdSidenav;
     this.$mdMedia = $mdMedia;
+    this.signedIn = false;
+    auth.isSignedIn()
+      .then( ( signedIn ) => {
+        this.signedIn = signedIn;
+        $scope.$apply();
+      } );
   }
 
   toggleSideNav() {

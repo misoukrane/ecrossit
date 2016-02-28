@@ -1,8 +1,8 @@
 import angular from "angular";
 
-let stamplayModule = angular.module( "stamplay", [] )
+let stamplayModule = angular.module( "app.components.stamplay", [] )
 
-.factory( "Stamplay", function( $window ) {
+.factory( "stamplay", function( $window ) {
   "ngInject";
   $window.Stamplay.init( "ecrossit" );
   return $window.Stamplay;

@@ -1,7 +1,7 @@
 class SignInController {
-  constructor( Auth ) {
+  constructor( auth ) {
     "ngInject";
-    this.authenticationService = Auth;
+    this.authenticationService = auth;
   }
 
   signInWith( provider ) {
