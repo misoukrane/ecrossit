@@ -1,5 +1,5 @@
-<div class="app">
-  <md-content class="content-wrapper">
+<div class="app" md-theme="{{vm.materialTheme}}" md-theme-watch ng-cloak>
+  <md-content class="{{vm.generalContentClass}}">
     <div ui-view="navbar"></div>
     <div ui-view="main"></div>
     <div ui-view="footer" class="footer"></div>

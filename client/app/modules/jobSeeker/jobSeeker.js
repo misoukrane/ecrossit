@@ -20,12 +20,14 @@ let componentModule = angular.module( "app.jobSeeker", [
           templateUrl: "app/modules/general/footer.html"
         }
       },
-      onEnter: ( $state, auth ) => {
+      onEnter: ( $state, $rootScope, auth ) => {
         "ngInject";
         auth.isSignedIn()
           .then( ( signedIn ) => {
             if ( !signedIn ) {
               $state.go( "signin" );
+            } else {
+              $rootScope.$broadcast( "event:Module", "JOBSEEKER" );
             }
           } );
         }

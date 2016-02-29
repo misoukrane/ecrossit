@@ -1,13 +1,13 @@
-import template from './generalNavbar.html';
-import controller from './generalNavbar.controller';
-import './generalNavbar.styl';
+import template from "./generalNavbar.html";
+import controller from "./generalNavbar.controller";
+import "./generalNavbar.styl";
 
 let generalNavbarComponent = {
-  restrict: 'E',
+  restrict: "E",
   bindings: {},
   template,
   controller,
-  controllerAs: 'vm'
+  controllerAs: "vm"
 };
 
 export default generalNavbarComponent;

@@ -1,9 +1,14 @@
-<br>
-<md-toolbar>
+<md-toolbar class="md-tall">
   <div class="md-toolbar-tools">
-    <a ui-sref="home">
+    <a ui-sref="home" style="margin-top: 15px">
       <img class="brand-logo" src="http://cdn-0-staging.ecrossit.com/images/ecrossit-default-small-2.png">
     </a>
     <span flex></span>
+    <md-button class="md-accent" ui-sref="about" ng-hide="vm.$mdMedia('xs')">Dashboard</md-button>
+    <md-button class="md-accent" ui-sref="about" ng-hide="vm.$mdMedia('xs')">E-Resume</md-button>
+    <md-button class="md-accent" ui-sref="about" ng-hide="vm.$mdMedia('xs')">Skill</md-button>
+    <md-button class="md-accent" ui-sref="about" ng-hide="vm.$mdMedia('xs')">Experience</md-button>
+    <md-button class="md-accent" ui-sref="about" ng-hide="vm.$mdMedia('xs')">Education</md-button>
+    <md-button class="md-accent" ui-sref="about" ng-hide="vm.$mdMedia('xs')">Project</md-button>
   </div>
 </md-toolbar>
